@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+:root {
+    --azul-fb: #2e89ff;
+    --preta: #18191a;
+    --texto: #b0b3b8;
+    --destaque: rgb(238, 237, 237);
+    --area: #242526;
+    --menu-item: #303031;
+    --divider: #3e4042;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: var(--texto);
+    background: var(--preta);
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.arredondall {
+    border-radius: 8px;
+}
+
+.person-circle-md {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.person-circle-sm {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.separator {
+    padding: 5px;
+    border-bottom: 1px solid var(--divider);
+}
+
+/* --- TOPO ------------------------------------------------ */
+.area-logo {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    margin: 0 15px;
+}
+
+.logo {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 25px;
+    color: var(--azul-fb);
+}
+
+.nav-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.top-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    height: 40px;
+    margin: 0 10px;
+    flex-grow: 1;
+}
+
+.top-btn i {
+    font-size: 25px;
+}
+
+.top-item:hover {
+    background-color: var(--menu-item);
+    border-radius: 8px;
+}
+
+.top-selected {
+    color: var(--azul-fb);
+}
+
+.top-meniz {
+    display: none;
+}
+
+.tools-meniz {
+    display: none;
+}
+
+.nav-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    padding: 0 5px;
+}
+
+.tools-sep {
+    padding: 0 5px;
+}
+
+.tools-circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    color: var(--destaque);
+    border-radius: 50%;
+    background-color: var(--menu-item);
+}
+
+.tools-circulo i {
+    font-size: 18px;
+}
+
+.search-circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    color: var(--destaque);
+    border-radius: 50%;
+    background-color: var(--menu-item);
+}
+
+.tools-circulo:hover {
+    color: var(--destaque);
+    background-color: var(--divider);
+    transition: .3s ease all;
+}
+
+
+/* --- MENUS ----------------------------------------------- */
+.icon-menu {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 15px;
+    width: 30px;
+}
+
+
+
+/* --- STORIES --------------------------------------------- */
+
+.carrosel-stories {
+    margin-top: 5px;
+}
+
+.carrosel-stories .owl-carousel .item img {
+    border-radius: 10px;
+}
+
+.name-story {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    padding: 12px;
+    font-size: 13px;
+    color: var(--destaque);
+}
+
+.criar-story {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--area);
+    padding: 5px;
+    font-size: 13px;
+    color: var(--destaque);
+}
+
+.criar-story span {
+    padding-top: 5px;
+}
+
+.box-story {
+    opacity: .6;
+}
+
+
+.delimita {
+    background-color: var(--area);
+}
+
+.delimita-destaque {
+    background-color: var(--menu-item);
+}
+
+.h-full {
+    width: 100%;
+}
+
+.h-margin {
+    width: 95%;
+}
+
+.v-centra {
+    display: flex;
+    align-items: center;
+}
+
+.titulo-area {
+    font-size: 14px;
+    margin: 12px;
+}
+
+
+/* --- MENU ESQUERDO ---------------------------------------- */
+
+.menu-esq {
+    width: 300px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+    color: var(--destaque);
+}
+
+.menu-item:hover {
+    background-color: var(--area);
+}
+
+.atalho img {
+    width: 35px;
+    height: 35px;
+    border-radius: 20%;
+}
+
+
+
+/* --- FEED ------------------------------------------------ */
+
+.feed {
+    width: 60%;
+}
+
+.feed-incluir-area {
+    display: flex;
+    justify-content: center;
+}
+
+.feed-incluir-usuario {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid var(--menu-item)
+}
+
+.feed-incluir-opcoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 13px;
+}
+
+.feed-incluir-opcoes a {
+    display: flex;
+    align-items: center;
+}
+
+.feed-incluir-opcoes span {
+    font-size: 13px;
+}
+
+.feed-incluir-opcoes i {
+    font-size: 20px;
+    padding-right: 8px;
+}
+
+.que-pensas {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    width: 95%;
+    height: 40px;
+    margin-top: 2px;
+}
+
+.que-pensas span {
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+.feed-incluir-agrupa {
+    height: 120px;
+    padding: 8px;
+}
+
+/* --- MENU DIREITO ---------------------------------------- */
+
+.menu-dir {
+    width: 300px;
+}
+
+
+.menu-dir-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.menu-contato {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.menu-contato:hover {
+    background-color: var(--area);
+}
+
+.novo-grupo {
+    font-size: 35px;
+}
+
+.titulo-contatos {
+    font-size: 18px;
+    margin: 12px;
+    width: 50%;
+}
+
+
+
+/* --- Cor itens menu esquerdo --- */
+#m-amigos i {
+    color: #70cdf1;
+}
+#m-grupos i {
+    color: #2fa5db;
+}
+#m-watch i {
+    color: #68e7b2;
+}
+#m-marketplace i {
+    color: #f5c88e;
+}
+#m-lembrancas i {
+    color: #c7e422;
+}
+#m-salvos i {
+    color: #e422e4;
+}
+
+
+/* --- Cor opções do 'No que está pensando' */
+#pensa-opt1 {
+    color: #f3425f;
+}
+
+#pensa-opt2 {
+    color: #45bd62;
+}
+
+#pensa-opt3 {
+    color: #f7b928;
+}
+
+#top-home {
+    color: var(--azul-fb);
+}
+

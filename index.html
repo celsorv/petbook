@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- OwlCarousel2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Petbook</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+
+            <div class="area-logo">
+                <div class="logo">
+                    <span>Petbook</span>
+                </div>
+                <div class="search">
+                    <a href="#" class="search-circulo">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-main">
+                <div class="menu-top">
+                    <div class="top-btn"><i class="fas fa-home top-selected"></i></div>
+                    <a href="#" class="top-btn top-item top-friends"><i class="fas fa-user-friends"></i></a>
+                    <a href="#" class="top-btn top-item top-watch"><i class="fas fa-play-circle"></i></a>
+                    <a href="#" class="top-btn top-item top-mark"><i class="fas fa-store"></i></a>
+                    <a href="#" class="top-btn top-item top-groups"><i class="fas fa-users"></i></a>
+                    <a href="#" class="top-btn top-item top-meniz"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+            <div class="nav-tools">
+                <div style="width: 30px"></div>
+                <div class="tools-sep tools-all">
+                    <a href="#" class="tools-circulo">
+                        <i class="fas fa-th"></i>
+                    </a>
+                </div>
+                <div class="tools-sep tools-msg">
+                    <a href="#" class="tools-circulo">
+                        <i class="fas fa-comment-dots"></i>
+                    </a>
+                </div>
+                <div class="tools-sep tools-alert">
+                    <a href="#" class="tools-circulo">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </div>
+                <div class="tools-sep tools-maxi">
+                    <a href="#" class="tools-circulo">
+                        <i class="fas fa-sort-down"></i>
+                    </a>
+                </div>
+                <div class="tools-sep tools-meniz">
+                    <a href="#" class="tools-circulo">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="main-container">
+
+            <!-- menu esquerdo -->
+            <div class="menu-esq menu">
+
+                <!-- itens principais -->
+
+                <a href="#" class="menu-item" id="m-perfil">
+                    <div class="icon-menu">
+                        <img class="person-circle-sm" src="img/dog-icon.jpg">
+                    </div>
+                    <span>Bob</span>
+                </a>
+                <a href="#" class="menu-item" id="m-amigos">
+                    <div class="icon-menu">
+                        <i class="fas fa-user-friends icon-menu"></i>
+                    </div>
+                    <span>Amigos</span>
+                </a>
+                <a href="#" class="menu-item" id="m-grupos">
+                    <div class="icon-menu">
+                        <i class="fas fa-users icon-menu"></i>
+                    </div>
+                    <span>Grupos</span>
+                </a>
+                <a href="#" class="menu-item" id="m-watch">
+                    <div class="icon-menu">
+                        <i class="fas fa-play-circle icon-menu"></i>
+                    </div>
+                    <span>Watch</span>
+                </a>
+                <a href="#" class="menu-item" id="m-marketplace">
+                    <div class="icon-menu">
+                        <i class="fas fa-store icon-menu"></i>
+                    </div>
+                    <span>Marketplace</span>
+                </a>
+                <a href="#" class="menu-item" id="m-lembrancas">
+                    <div class="icon-menu">
+                        <i class="fas fa-history icon-menu"></i>
+                    </div>
+                    <span>Lembranças</span>
+                </a>
+                <a href="#" class="menu-item" id="m-salvos">
+                    <div class="icon-menu">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <span>Salvos</span>
+                </a>
+                <a href="#" class="menu-item" id="m-mais">
+                    <div class="icon-menu">
+                        <i class="fas fa-chevron-circle-down icon-menu"></i>
+                    </div>
+                    <span>Ver mais</span>
+                </a>
+
+                <div class="separator" role="separator"></div>
+
+                <!-- itens atalho -->
+
+                <div class="titulo-area">Seus atalhos</div>
+
+                <a href="#" class="menu-item" id="m-atalho-1">
+                    <div class="icon-menu atalho">
+                        <img src="img/cat-shop-icon.jpg">
+                    </div>
+                    <span>Cat Pet Shop</span>
+                </a>
+
+                <a href="#" class="menu-item" id="m-atalho-2">
+                    <div class="icon-menu atalho">
+                        <img src="img/banhinho-icon.jpg">
+                    </div>
+                    <span>Hora do Banho</span>
+                </a>
+
+                <a href="#" class="menu-item" id="m-atalho-3">
+                    <div class="icon-menu atalho">
+                        <img src="img/melhor-amigo-icon.jpg">
+                    </div>
+                    <span>Meu Melhor Amigo</span>
+                </a>
+
+            </div>
+
+            <!-- feed -->
+            <div class="feed">
+
+                <!-- stories -->
+                <div class="carrosel-stories">
+                    <div class="owl-carousel owl-theme">
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini0.jpg" alt="">
+                            <div class="criar-story">
+                                <span style="display: block">Criar story</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini1.jpg" alt="">
+                            <span class="name-story">
+                                <span>Boris</span>
+                            </span>
+                        </a>
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini2.jpg" alt="">
+                            <span class="name-story">
+                                <span>Pingo</span>
+                            </span>
+                        </a>
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini3.jpg" alt="">
+                            <span class="name-story">
+                                <span>Barth</span>
+                            </span>
+                        </a>
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini4.jpg" alt="">
+                            <span class="name-story">
+                                <span>Elvis</span>
+                            </span>
+                        </a>
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini5.jpg" alt="">
+                            <span class="name-story">
+                                <span>Lorde</span>
+                            </span>
+                        </a>
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini6.jpg" alt="">
+                            <span class="name-story">
+                                <span>Fred</span>
+                            </span>
+                        </a>
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini7.jpg" alt="">
+                            <span class="name-story">
+                                <span>Nino</span>
+                            </span>
+                        </a>
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini8.jpg" alt="">
+                            <span class="name-story">
+                                <span>Tico</span>
+                            </span>
+                        </a>
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini9.jpg" alt="">
+                            <span class="name-story">
+                                <span>Marley</span>
+                            </span>
+                        </a>
+                        <a href="#" class="item">
+                            <img class="box-story" src="img/stories/mini10.jpg" alt="">
+                            <span class="name-story">
+                                <span>Toy</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- incluir no feed -->
+                <div class="feed-incluir-area">
+
+                    <div class="feed-incluir-agrupa delimita arredondall h-margin">
+
+                        <div>
+                            <div class="feed-incluir-usuario h-full">
+                                <a href="#"><img class="person-circle-md" src="img/dog-icon.jpg"></a>
+                                <a href="#" class="que-pensas delimita-destaque">
+                                    <span>No que você está pensando, Bob?</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="feed-incluir-opcoes">
+                            <a href="#" class="feed-incluir-live">
+                                <i class="fas fa-video" id="pensa-opt1"></i>
+                                <span>Vídeo ao vivo</span>
+                            </a>
+                            <a href="#" class="feed-incluir-photo">
+                                <i class="fas fa-photo-video" id="pensa-opt2"></i>
+                                <span>Foto/vídeo</span>
+                            </a>
+                            <a href="#" class="feed-incluir-texto">
+                                <i class="far fa-laugh" id="pensa-opt3"></i>
+                                <span>Sentimento/atividade</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- menu direito -->
+            <div class="menu-dir menu">
+
+                <!-- contatos - barra titulo -->
+                <div class="menu-dir-topo">
+                    <div class="titulo-contatos">Contatos</div>
+                    <a href="#"><i class="fas fa-plus-square"></i></a>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+
+                <a href="#" class="menu-item" id="m-contato-1">
+                    <div class="icon-menu">
+                        <img class="person-circle-sm" src="img/belinha-icon.jpg">
+                    </div>
+                    <span>Belinha</span>
+                </a>
+                <a href="#" class="menu-item" id="m-contato-2">
+                    <div class="icon-menu">
+                        <img class="person-circle-sm" src="img/barto-icon.jpg">
+                    </div>
+                    <span>Bartô</span>
+                </a>
+                <a href="#" class="menu-item" id="m-contato-3">
+                    <div class="icon-menu">
+                        <img class="person-circle-sm" src="img/duque-icon.jpg">
+                    </div>
+                    <span>Duque</span>
+                </a>
+                <a href="#" class="menu-item" id="m-contato-4">
+                    <div class="icon-menu">
+                        <img class="person-circle-sm" src="img/Ted-icon.jpg">
+                    </div>
+                    <span>Ted</span>
+                </a>
+                <a href="#" class="menu-item" id="m-contato-5">
+                    <div class="icon-menu">
+                        <img class="person-circle-sm" src="img/Leonor-icon.jpg">
+                    </div>
+                    <span>Leonor</span>
+                </a>
+                <a href="#" class="menu-item" id="m-contato-6">
+                    <div class="icon-menu">
+                        <img class="person-circle-sm" src="img/floquinho-icon.jpg">
+                    </div>
+                    <span>Floquinho</span>
+                </a>
+                <a href="#" class="menu-item" id="m-contato-7">
+                    <div class="icon-menu">
+                        <img class="person-circle-sm" src="img/apolo-icon.jpg">
+                    </div>
+                    <span>Apolo</span>
+                </a>
+                <a href="#" class="menu-item" id="m-contato-8">
+                    <div class="icon-menu">
+                        <img class="person-circle-sm" src="img/Luke-icon.jpg">
+                    </div>
+                    <span>Luke</span>
+                </a>
+
+                <div class="separator" role="separator"></div>
+
+                <div class="titulo-area">Conversas em grupo</div>
+
+                <a href="#" class="menu-item">
+                    <div class="icon-menu">
+                        <i class="fas fa-plus-circle novo-grupo"></i>
+                    </div>
+                    <span>Criar novo grupo</span>
+                </a>
+
+            </div>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/01d114f48d.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- OwlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/setup.js"></script>
+
+</body>
+
+</html>

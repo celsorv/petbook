@@ -1,0 +1,45 @@
+@media screen and (max-width: 900px) {
+
+    .feed-incluir-area .feed-incluir-live {
+        display: none;
+    }
+
+    .menu-top .top-watch {
+        display: none;
+    }
+
+    .menu-top .top-mark {
+        display: none;
+    }
+
+    .menu-top .top-groups {
+        display: none;
+    }
+
+    .menu-top .top-meniz {
+        display: inherit;
+    }
+
+    .nav-tools .tools-all {
+        display: none;
+    }
+
+    .nav-tools .tools-maxi {
+        display: none;
+    }
+
+    .nav-tools .tools-meniz {
+        display: inherit;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .main-container .menu-esq {
+        display: none;
+    }
+
+}
+
